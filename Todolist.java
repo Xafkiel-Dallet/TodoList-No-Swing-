@@ -17,10 +17,19 @@ public class Todolist {
             
             switch (choice){
                 case 1:
+                System.out.println("Enter your task:  ");
+                String task=sc.nextLine();
+                tasks.add(task);
+                System.out.println("Task added.");
                 
                 break;
                 
                 case 2:
+                System.out.println("Your current tasks: ");
+                if(tasks.isEmpty()){
+                    System.out.println("There is no task/s yet.");
+                }
+                
                 
                 break;
                 
